@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+/* estilos  productos.html */
+
+
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1111;
+    position: absolute;
+    top:450px;
+    left: 200px;
+    
+    width: 0;
+    height: 100%;
+    margin-left: -200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #00573F ;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 220px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: relative;
+    padding: 15px;
+
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: -250px;
+    margin-bottom:30px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 220px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+
+    text-indent: 20px;
+    line-height: 40px;
+}
+.sidebar-nav li:first-child{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-top: 40px;
+    text-indent: 5px;
+    padding-right: 5px;
+}
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #000;
+    background: #048B66 ;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #fff;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #000;
+    background: none;
+}
+
+/* JUMBOTRON PRODUCTOS*/
+.jumbotron{
+    background-color:  rgba(132, 81,  0,1);
+    color: #fff;
+}
+
+
+/* PAGE-HEADER*/
+
+.page-header{
+    text-transform: uppercase;
+    border-top:1px solid #052A56;
+    border-bottom: none;
+
+}
+
+
+
+/*  ICONO */
+
+.icon-list{
+    font-size: 2.5rem;
+}
+.icon-list a{
+    text-decoration: none;
+}
+
+/* FOOTER*/
+footer{
+    margin-top: 20px;
+}
+
+@media (min-width: 480px){
+    #sidebar-wrapper{
+        top:450px;
+        height: 60%;
+        
+    }
+}
+@media (min-width: 768px){
+   #sidebar-wrapper{
+        top:530px;
+        height: 60%;
+      
+        
+    }
+}
+@media (min-width: 992px){
+    #sidebar-wrapper{
+        top:540px;
+        height: 45%;
+    }
+/*@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+        left: 350px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 1200px){
+    #sidebar-wrapper{
+        
+        
+        left: 350px;
+    }
+}*/
